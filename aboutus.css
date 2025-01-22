@@ -1,0 +1,329 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 0; /* Add padding to top and bottom */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keep it on top of other elements */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Navigation Bar Styling */
+  header ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Arrange list items horizontally */
+    justify-content: center; /* Center align items */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Items */
+  header ul li {
+    margin: 0 15px; /* Spacing between menu items */
+  }
+  
+  header ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link text color */
+    font-size: 18px; /* Font size */
+    font-weight: 500; /* Slightly bold */
+    padding: 5px 10px; /* Padding for clickable area */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  /* Hover and Active States */
+  header ul li a:hover,
+  header ul li a.active {
+    color: #f73505; /* Golden color for hover and active link */
+   /* border-bottom: 2px solid #8d6eff; /* Add underline for active state */ 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header ul {
+      flex-direction: column; /* Stack items vertically */
+      background-color: #444; /* Slightly lighter background */
+      padding: 10px 0;
+    }
+  
+    header ul li {
+      margin: 10px 0; /* Add vertical spacing */
+    }
+  }
+   
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color:rgba(184, 181, 181);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* About Us Section */
+.about-us {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    text-align: center;
+    color:#333;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.about-us p {
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+/* Brand Story Section */
+.Brand, .vision, .team {
+    margin-bottom: 30px;
+}
+
+.Brand h3, .vision h3, .team h3 {
+    color:#333;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.Brand p, .vision p {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+/* Team Section */
+.team-section h4 {
+    text-align: center;
+    color:rgb(83, 83, 83);
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 members per row */
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.team-grid-center {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 members per row on tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* 1 member per row on small screens */
+    }
+}
+
+/* Team Section Styling */
+.team-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 130px;
+}
+
+/* Team Grid Styling */
+.team-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Three members in the first row */
+    gap: 40px; /* Spacing between items */
+    justify-content: center; /* Center the grid within the screen */
+}
+
+.team-grid > :nth-child(4),
+.team-grid > :nth-child(5) {
+    grid-column: span 1; /* Span two columns for centering */
+    justify-self: center; /* Center align the content */
+    align-content: space-between;
+}
+
+
+
+/* Team Member Card */
+.team-member {
+    background: #f1f1f1;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 250px; /* Limit the card width */
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003d80;
+}
+/* Style the feedback section */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the section title */
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Style the form container */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Style input and textarea fields */
+form input, 
+form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Add focus effect to input and textarea fields */
+form input:focus, 
+form textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Style the submit button */
+form button {
+    background: #007BFF;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+form button:hover {
+    background: #0056b3;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+}
+
+
+/* Hidden Message */ 
+.hidden {
+    display: none;
+    text-align: center;
+    color: #0056b3;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
